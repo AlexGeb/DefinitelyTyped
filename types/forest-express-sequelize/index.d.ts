@@ -85,7 +85,7 @@ export class PermissionMiddlewareCreator {
     create(): RequestHandler;
     update(): RequestHandler;
     delete(): RequestHandler;
-    smartAction(): RequestHandler;
+    smartAction(): [RequestHandler, RequestHandler];
 }
 
 // Everything related to Forest Charts
